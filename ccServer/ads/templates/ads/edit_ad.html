@@ -1,0 +1,7 @@
+<!-- templates/ads/edit_ad.html -->
+<h1>Edit Ad</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save Changes</button>
+</form>

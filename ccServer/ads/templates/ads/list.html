@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ads</title>
+</head>
+<body>
+    <h1>Ads</h1>
+    {% for ad in ads %}
+        <h2><a href="{% url 'view_ad' ad.id %}">{{ ad.title }}</a></h2>
+        <p>{{ ad.description }}</p>
+    {% endfor %}
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!-- templates/ads/create_ad.html -->
+<h1>Create Ad</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Create</button>
+</form>
+
+<!--
+/user
+(GET)
+JSON
+{
+    "username":  "Tom",
+    "age": 12,
+} 
+
+
+data = getData()
+
+
+data.get("username")
+data.age
+data['username']
+-->
